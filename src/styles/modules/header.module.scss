@@ -1,14 +1,27 @@
+@import "../variables.scss";
+
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  z-index: 10;
+  background-color: $nav-color;
+}
 .navbar {
+  margin: auto;
+  max-width: $content-width;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   //   transform: translateY(-500px);
   //   position: absolute;
   .logo {
     h1 {
       margin: 0;
-      color: black;
+      color: $p-color;
     }
   }
   .nav-links {
@@ -25,7 +38,7 @@
     .nav-item {
       margin-left: 2rem;
       text-decoration: none;
-      color: black;
+      color: $s-color;
     }
   }
 }

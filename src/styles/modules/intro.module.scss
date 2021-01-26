@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 // .bg-image {
 //   position: absolute;
 //   top: 0;
@@ -11,31 +13,51 @@
 //   background-size: cover;
 //   background-position: center;
 // }
+.intro-wrapper {
+  position: relative;
+  margin: 120px 0 60px 0;
 
-.intro-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 85vh;
+  .intro-content {
+    height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  .type-wrapper {
-    color: black;
+    .type-wrapper {
+      color: black;
+      text-align: left;
+      span {
+        font-size: 3rem;
+        font-weight: bold;
+      }
 
-    text-align: left;
-    span {
-      font-size: 3rem;
-      font-weight: bold;
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+      .social-icons {
+        font-size: 1.5rem;
+        max-width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+
+        path {
+          color: $s-color;
+        }
+      }
     }
+    .info-wrapper {
+      display: flex;
+      padding: 0;
+      background-color: $p-color;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
 
-    p {
-      font-size: 1.5rem;
-      font-weight: 300;
+      img {
+        height: 100%;
+        width: 281px;
+      }
     }
-  }
-  .info-wrapper {
-    padding: 30px;
-    background-color: rgb(248, 248, 248);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   }
 }
