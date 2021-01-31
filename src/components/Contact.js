@@ -80,7 +80,6 @@ function Contact() {
             disabled={buttonDisabled()}
             type="submit"
             className={Styles.submit}
-            onClick={e => e.preventDefault()}
           >
             Submit
           </button>
