@@ -24,22 +24,22 @@ function Contact() {
     }
   }
 
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        name: name,
-        email: email,
-        message: message,
-      }),
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
+  // const handleSubmit = e => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": "contact",
+  //       name: name,
+  //       email: email,
+  //       message: message,
+  //     }),
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error))
 
-    e.preventDefault()
-  }
+  //   e.preventDefault()
+  // }
 
   return (
     <div className={Styles.contactWrapper} id="contact">
@@ -49,7 +49,14 @@ function Contact() {
           <Mailbox />
         </div>
 
-        <form className={Styles.form} onSubmit={handleSubmit}>
+        <form
+          className={Styles.form}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name" className={Styles.name}>
             <span>Name:</span>
             <input
