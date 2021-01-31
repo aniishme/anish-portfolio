@@ -1,45 +1,45 @@
-import React from 'react'
+import React from "react"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
 
+import Person from "../../static/person.webp"
 
-import Styles from '../styles/modules/intro.module.scss'
+import Styles from "../styles/modules/intro.module.scss"
 
 // import Typical from 'react-typical'
 
 function Intro() {
-
-    
-      
-    return (
-        <div className={Styles.introWrapper} id="intro">
-            <div className={Styles.bgImage}></div>
-            <div className={Styles.introContent}>
-                <div className={Styles.typeWrapper}>
-                    <p>Hey, I'm</p>
-                    <span>ANISH SHARMA</span>
-                    <p>FRONT-END DEVELOPER</p>
-                    <span className={Styles.socialIcons}>
-                        <FontAwesomeIcon icon={faGithub} />
-                        <FontAwesomeIcon icon={faTwitter} />
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </span>
-                </div>
-                <div className={Styles.infoWrapper}>
-                            {/* <span>Technologies:</span>
+  return (
+    <div className={Styles.introWrapper} id="intro">
+      <div className={Styles.bgImage}></div>
+      <div className={Styles.introContent}>
+        <div className={Styles.typeWrapper}>
+          <p>Hey, I'm</p>
+          <span>ANISH SHARMA</span>
+          <p>FRONT-END DEVELOPER</p>
+          <span className={Styles.socialIcons}>
+            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faInstagram} />
+          </span>
+        </div>
+        <div className={Styles.infoWrapper}>
+          {/* <span>Technologies:</span>
                             <p>HTML</p>
                             <p>JS</p>
                             <p>React Js</p>
                             <p>Gatsby</p> */}
-                    
-                   <img src="/person.jpg" alt="info"/>         
-                </div>
-                
-            
-            </div>
+
+          <img src={Person} alt="info" />
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Intro
