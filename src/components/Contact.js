@@ -24,6 +24,23 @@ function Contact() {
     }
   }
 
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        name: name,
+        email: email,
+        message: message,
+      }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
+    e.preventDefault()
+  }
+
   return (
     <div className={Styles.contactWrapper} id="contact">
       <h1>Get In Touch</h1>
@@ -32,13 +49,7 @@ function Contact() {
           <Mailbox />
         </div>
 
-        <form
-          className={Styles.form}
-          autoComplete="off"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-        >
+        <form className={Styles.form} onSubmit={handleSubmit}>
           <label htmlFor="name" className={Styles.name}>
             <span>Name:</span>
             <input
