@@ -7,7 +7,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
 
-import Person from "../../static/person.webp"
+import Person from "../../static/person.jpg"
 
 import Styles from "../styles/modules/intro.module.scss"
 
@@ -22,11 +22,13 @@ function Intro() {
           <p>Hey, I'm</p>
           <span>ANISH SHARMA</span>
           <p>FRONT-END DEVELOPER</p>
-          <span className={Styles.socialIcons}>
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faInstagram} />
-          </span>
+          {Styles && (
+            <span className={Styles.socialIcons}>
+              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faInstagram} />
+            </span>
+          )}
         </div>
         <div className={Styles.infoWrapper}>
           {/* <span>Technologies:</span>
