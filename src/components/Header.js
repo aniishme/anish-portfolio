@@ -11,11 +11,11 @@ function Header() {
         <div className={Styles.navWrapper}>
             <nav className={Styles.navbar}>
                 <div className={Styles.logo}>
-                    <h1>ANISH</h1>
+                    <h1><Link to="/">ANISH</Link></h1>
                 </div>
                 <div>
                     <ul className={Styles.navLinks}>
-                        <li><Link className={Styles.navItem} to="#intro">intro</Link></li>
+                        <li><Link className={Styles.navItem} to="/">intro</Link></li>
                         <li><Link className={Styles.navItem} to="#skills">skills</Link></li>
                         <li><Link className={Styles.navItem} to="#works">works</Link></li>
                         <li><Link className={Styles.navItem} to="#contact">contact</Link></li>

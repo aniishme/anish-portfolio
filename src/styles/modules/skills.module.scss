@@ -1,13 +1,12 @@
 @import "../variables.scss";
 .skill-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: $s-color;
   }
   .skill-container {
@@ -30,7 +29,7 @@
       align-items: center;
       justify-content: space-evenly;
       background-color: $nav-color;
-      box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+      box-shadow: $box-shadow;
       border-radius: 10px;
       .icon-wrapper {
         background-color: $s-color;

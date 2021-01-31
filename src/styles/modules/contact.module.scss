@@ -1,0 +1,87 @@
+@import "../variables.scss";
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: $s-color;
+    margin-bottom: 60px;
+  }
+  .form-wrapper {
+    width: 100%;
+    padding: 30px;
+    background-color: $nav-color;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .mailbox {
+      text-align: center;
+      flex: 2;
+    }
+    .mailbox svg {
+      height: auto;
+      width: 200px;
+    }
+    .form {
+      flex: 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name email"
+        "message message"
+        ". button";
+      grid-gap: 10px;
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        input::placeholder,
+        textarea::placeholder {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          margin: 10px 0;
+          background-color: $p-color;
+        }
+      }
+
+      .name {
+        grid-area: name;
+      }
+      .email {
+        grid-area: email;
+      }
+      .message {
+        grid-area: message;
+      }
+      .submit {
+        grid-area: button;
+        cursor: pointer;
+        width: fit-content;
+        justify-self: end;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: $s-color;
+      }
+      button:disabled {
+        cursor: not-allowed;
+        background-color: #549e73;
+      }
+    }
+  }
+}

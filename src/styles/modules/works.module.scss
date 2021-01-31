@@ -1,3 +1,52 @@
+@import "../variables.scss";
 .work-wrapper {
-  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  h1 {
+    color: $s-color;
+    margin-bottom: 60px;
+  }
+  .work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    .work-card {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $nav-color;
+      box-shadow: $box-shadow;
+      padding: 10px;
+      border-radius: 10px;
+      .image {
+        padding: 10px;
+        border-radius: 10px;
+      }
+      img {
+        height: 180px;
+        width: 180px;
+        display: flex;
+        border-radius: 10px;
+      }
+      .work-content {
+        height: 100%;
+        width: 50%;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        p {
+          margin: 10px 0;
+        }
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: $s-color;
+        }
+      }
+    }
+  }
 }

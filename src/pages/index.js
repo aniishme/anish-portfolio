@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Works from '../components/Works'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
           <Intro/>
           <Skills/>
           <Works/>
+          <Contact/>
         </div>
       </Layout>
     
