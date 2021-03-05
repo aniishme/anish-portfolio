@@ -1,5 +1,5 @@
 @import "../variables.scss";
-
+@import "../mixin.scss";
 .nav-wrapper {
   position: fixed;
   width: 100%;
@@ -18,6 +18,9 @@
   align-items: center;
   //   transform: translateY(-500px);
   //   position: absolute;
+  @include xLarge {
+    max-width: 1040px;
+  }
   .logo {
     h1 {
       margin: 0;

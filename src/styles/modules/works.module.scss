@@ -3,16 +3,17 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   h1 {
     color: $s-color;
     margin-bottom: 60px;
   }
   .work-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 20px;
+    grid-gap: 100px;
+    width: 100%;
     .work-card {
       height: 250px;
       display: flex;

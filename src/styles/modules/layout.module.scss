@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 html {
   background-color: $bg-color;
@@ -6,4 +7,8 @@ html {
 .container {
   margin: 0 auto;
   max-width: $content-width;
+  @include xLarge {
+    margin: 0 auto;
+    max-width: 1040px;
+  }
 }

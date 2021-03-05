@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 .footer-wrapper {
   position: absolute;
@@ -14,6 +15,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include xLarge {
+    max-width: 1040px;
+  }
 
   p {
     color: $s-color;
