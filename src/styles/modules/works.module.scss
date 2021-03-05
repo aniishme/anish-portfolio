@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 .work-wrapper {
   display: flex;
   align-items: center;
@@ -23,6 +24,10 @@
       box-shadow: $box-shadow;
       padding: 10px;
       border-radius: 10px;
+      @include mobile {
+        flex-direction: column-reverse;
+        height: fit-content;
+      }
       .image {
         padding: 10px;
         border-radius: 10px;
@@ -32,6 +37,10 @@
         width: 180px;
         display: flex;
         border-radius: 10px;
+        @include mobile {
+          height: 120px;
+          width: 120px;
+        }
       }
       .work-content {
         height: 100%;
@@ -39,6 +48,9 @@
         padding: 10px;
         display: grid;
         grid-template-rows: auto 1fr auto;
+        @include mobile {
+          width: 100%;
+        }
         p {
           margin: 10px 0;
         }

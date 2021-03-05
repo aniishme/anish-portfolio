@@ -23,6 +23,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @include tablet {
+      justify-content: center;
+      text-align: center;
+    }
+
     .type-wrapper {
       color: black;
       text-align: left;
@@ -58,6 +63,9 @@
       img {
         height: 100%;
         width: 281px;
+        @include tablet {
+          display: none;
+        }
       }
     }
   }
