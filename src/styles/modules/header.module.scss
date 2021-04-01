@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   box-shadow: $box-shadow;
-  z-index: 10;
+  z-index: 1;
   background-color: $nav-color;
 }
 .navbar {
@@ -37,15 +37,49 @@
     margin: 0;
     list-style: none;
     padding: 0.5rem;
+    @include medium {
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      background-color: $nav-color;
+      transition: linear 0.5s transform;
+      transform: translateX(100%);
+      transform-origin: top;
+      width: 50%;
+      top: 60px;
+      right: 0;
+      height: 400px;
+    }
 
     li {
       margin: 0;
     }
 
     .nav-item {
-      margin-left: 2rem;
+      margin-left: 2.5rem;
       text-decoration: none;
       color: $s-color;
+      @include medium {
+        margin: 0;
+      }
+    }
+  }
+  .nav-links-responsive {
+    transform: translateX(0);
+  }
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+
+    @include medium {
+      display: block;
+    }
+    .line {
+      height: 3px;
+      width: 25px;
+      background-color: $p-color;
+      margin-bottom: 5px;
+      border-radius: 1px;
     }
   }
 }

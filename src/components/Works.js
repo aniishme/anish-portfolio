@@ -1,35 +1,24 @@
 import React from "react"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink, faCode } from "@fortawesome/free-solid-svg-icons"
+
 import Styles from "../styles/modules/works.module.scss"
 
 function Works() {
   const works = [
     {
-      title: "First Project",
-      desc: "This is my first project done in react js and next js",
-      sourceCode: null,
-      demoLink: null,
+      title: "React Quote Generator",
+      desc: "Generate random quote using random quote api.",
+      sourceCode: "https://github.com/aniishme/react-quote-generator",
+      demoLink: "https://randomquotegeneretor.netlify.app/",
       image: "/favicon.ico",
     },
     {
-      title: "Second Project",
-      desc: "This is my Second project done in react js and next js",
-      sourceCode: null,
-      demoLink: null,
-      image: "/favicon.ico",
-    },
-    {
-      title: "First Projectsad",
-      desc: "This is my first project done in react js and next js",
-      sourceCode: null,
-      demoLink: null,
-      image: "/favicon.ico",
-    },
-    {
-      title: "Second Projectsad",
-      desc: "This is my Second project done in react js and next js",
-      sourceCode: null,
-      demoLink: null,
+      title: "JS Snake Game",
+      desc: "Snake game written in Javascript using Canvas.",
+      sourceCode: "https://github.com/aniishme/JS-Snake-Game",
+      demoLink: "https://jscanvas-snakegame.netlify.app/",
       image: "/favicon.ico",
     },
   ]
@@ -43,6 +32,22 @@ function Works() {
               <div className={Styles.workContent}>
                 <h3>{work.title}</h3>
                 <p>{work.desc}</p>
+                <div className={Styles.cardIcons}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={work.demoLink}
+                  >
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                  <a
+                    href={work.sourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faCode} />
+                  </a>
+                </div>
               </div>
               <div className={Styles.image}>
                 <img src={work.image} alt="" />
