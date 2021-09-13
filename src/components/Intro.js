@@ -3,10 +3,10 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithub,
-  faTwitter,
   faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-
+import { Link } from "gatsby"
 import Person from "../../static/person.jpg"
 
 import Styles from "../styles/modules/intro.module.scss"
@@ -24,19 +24,31 @@ function Intro() {
           <p>FRONT-END DEVELOPER</p>
           {Styles && (
             <span className={Styles.socialIcons}>
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon icon={faTwitter} />
-              <FontAwesomeIcon icon={faInstagram} />
+              <a
+                href="https://github.com/aniishme"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sharmaanish023/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                href="https://www.instagram.com/aniish.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
             </span>
           )}
         </div>
         <div className={Styles.infoWrapper}>
-          {/* <span>Technologies:</span>
-                            <p>HTML</p>
-                            <p>JS</p>
-                            <p>React Js</p>
-                            <p>Gatsby</p> */}
-
           <img src={Person} alt="info" />
         </div>
       </div>

@@ -9,17 +9,19 @@ function Works() {
   const works = [
     {
       title: "React Quote Generator",
-      desc: "Generate random quote using random quote api.",
+      desc:
+        "Generate random quote using random quote api. I learned to work with fetching api data in ReactJS while creating this site.",
       sourceCode: "https://github.com/aniishme/react-quote-generator",
       demoLink: "https://randomquotegeneretor.netlify.app/",
-      image: "/favicon.ico",
+      image: "/favicon.png",
     },
     {
       title: "JS Snake Game",
-      desc: "Snake game written in Javascript using Canvas.",
+      desc:
+        "Snake game written in Javascript using Canvas. I learned about Object Oriented Programming in JS while coding this.",
       sourceCode: "https://github.com/aniishme/JS-Snake-Game",
       demoLink: "https://jscanvas-snakegame.netlify.app/",
-      image: "/favicon.ico",
+      image: "/favicon.png",
     },
   ]
   return (
