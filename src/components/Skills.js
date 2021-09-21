@@ -39,8 +39,8 @@ function Skills() {
           </div>
           <h3>React Js</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
-            nam culpa tempore illum autem{" "}
+            I have been learning React JS recently and this site is also built
+            using it.{" "}
           </p>
         </div>
       </div>

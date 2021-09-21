@@ -8,6 +8,15 @@ import Styles from "../styles/modules/works.module.scss"
 function Works() {
   const works = [
     {
+      title: "React Todo Application",
+      desc:
+        "A todo app built in React with context state management and browse local storage.",
+      sourceCode:
+        "https://github.com/aniishme/react-todo-context-state-management",
+      demoLink: "https://anishs-react-todo.netlify.app/",
+      image: "/favicon.png",
+    },
+    {
       title: "React Quote Generator",
       desc:
         "Generate random quote using random quote api. I learned to work with fetching api data in ReactJS while creating this site.",
