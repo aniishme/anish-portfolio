@@ -8,6 +8,15 @@ import Styles from "../styles/modules/works.module.scss"
 function Works() {
   const works = [
     {
+      title: "Socket IO multiplayer typing",
+      desc:
+        "A typing game built in NodeJs with SocketIo for real time communication",
+      sourceCode:
+        "https://github.com/aniishme/TypeRacer---socketio",
+      demoLink: "https://anishtyperacer.herokuapp.com/",
+      image: "/favicon.png",
+    },
+    {
       title: "React Todo Application",
       desc:
         "A todo app built in React with context state management and browser local storage.",
