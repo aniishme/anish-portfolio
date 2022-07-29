@@ -8,6 +8,15 @@ import Styles from "../styles/modules/works.module.scss"
 function Works() {
   const works = [
     {
+      title: "Social Media Clone - Current Project",
+      desc:
+        "A clone of social media with generic features like Login Sign Up, Create Post, View Profile etc",
+      sourceCode:
+        "https://github.com/aniishme/socialmediaclone-frontend",
+      demoLink: "https://anishsmclone.netlify.app/",
+      image: "/favicon.png",
+    },
+    {
       title: "Socket IO multiplayer typing",
       desc:
         "A typing game built in NodeJs with SocketIo for real time communication",
@@ -15,7 +24,7 @@ function Works() {
         "https://github.com/aniishme/TypeRacer---socketio",
       demoLink: "https://anishtyperacer.herokuapp.com/",
       image: "/favicon.png",
-    },
+    }
     {
       title: "React Todo Application",
       desc:
