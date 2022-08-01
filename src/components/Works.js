@@ -24,7 +24,7 @@ function Works() {
         "https://github.com/aniishme/TypeRacer---socketio",
       demoLink: "https://anishtyperacer.herokuapp.com/",
       image: "/favicon.png",
-    }
+    },
     {
       title: "React Todo Application",
       desc:
